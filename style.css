@@ -13,7 +13,34 @@ header{
 
 
 .cabecalho{
-    background-color: #e9b86e;
+    background-color: #ffe7c2;
+    color: white;
+}
+
+
+.cabecalho-lista{
+    display: flex;
+    position: relative;
+    left: 300px;
+
+
+}
+header{
+    background-color: #dccbb5
+    color: white;
+}
+
+
+.logotipo{
+    width: 120px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+
+.cabecalho{
+    background-color: #ffe7c2;
     color: white;
 }
 
