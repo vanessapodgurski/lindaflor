@@ -22,34 +22,35 @@ header{
     display: flex;
     position: relative;
     left: 300px;
-
-
-}
-header{
-    background-color: #dccbb5
-    color: white;
-}
-
-
-.logotipo{
-    width: 120px;
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
-
-
-.cabecalho{
-    background-color: #ffe7c2;
-    color: white;
-}
-
-
-.cabecalho-lista{
-    display: flex;
-    position: relative;
-    left: 300px;
-
-
-}
-
+    body {
+        font-family: Arial, sans-serif; /* Mudando para Arial, uma fonte mais comum e legível */
+    }
+    
+    /* Adição de imagem ao cabeçalho */
+    .header {
+        background-color: #dccbb5;
+        color: white;
+        background-image: url('caminho/para/sua/imagem.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real da sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem */
+    }
+    
+    .logo {
+        width: 120px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .header-list {
+        display: flex;
+        position: relative;
+        left: 300px;
+    }
+    
+    /* Adição de imagem a outras seções (exemplo) */
+    .section {
+        background-image: url('caminho/para/outra/imagem.jpg');
+        background-size: cover;
+        background-position: center;
+    }
