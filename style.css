@@ -26,11 +26,11 @@ header{
         font-family: Arial, sans-serif; /* Mudando para Arial, uma fonte mais comum e legível */
     }
     
-    /* Adição de imagem ao cabeçalho */
-    .header {
+    
+    .header-list {
         background-color: #dccbb5;
         color: white;
-        background-image: url('caminho/para/sua/imagem.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real da sua imagem */
+        background-image: url(); 
         background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
         background-position: center; /* Centraliza a imagem */
     }
@@ -50,7 +50,7 @@ header{
     
     /* Adição de imagem a outras seções (exemplo) */
     .section {
-        background-image: url('caminho/para/outra/imagem.jpg');
+        background-image: url('"C:\Users\COPERTRANS PR\Downloads\images.jpeg);
         background-size: cover;
         background-position: center;
     }
