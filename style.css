@@ -16,4 +16,49 @@ footer {
     bottom: 0;
     width: 100%;
 }
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+header .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+main {
+    padding: 20px;
+}
+#produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.produto {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 200px;
+}
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-top: 2px solid #e0e0e0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
