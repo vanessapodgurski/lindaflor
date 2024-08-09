@@ -1,56 +1,46 @@
-<!DOCTYPE html><!DOCTYPE html>
-<html 
-    </script>
-</body>
-</html>
+<<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Linda Flor</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: white; padding: 10px; text-align: center; }
+        .logo { width: 100px; }
+        .menu { display: none; position: fixed; top: 0; left: 0; width: 100%; background-color: #333; color: white; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+        .menu a { color: white; text-decoration: none; display: block; padding: 10px; }
+        .menu a:hover { background-color: #575757; }
+        .menu-btn { font-size: 30px; cursor: pointer; padding: 15px; background-color: #333; color: white; text-align: center; }
+        .menu-btn:hover { background-color: #575757; }
+        main { padding: 20px; }
+        .produto img { width: 100px; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; }
+    </style>
 </head>
 <body>
     <header>
+        <div class="menu-btn" onclick="toggleMenu()">☰ Menu</div>
+        <div id="menu" class="menu">
+            <a href="#home">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <img src="logo.png" alt="Logo Linda Flor" class="logo">
         <h1>Loja Linda Flor</h1>
         <p>Descubra nossas joias exclusivas, inspiradas na natureza.</p>
     </header>
     <main>
         <section id="produtos">
             <h2>Nossos Produtos</h2>
-            <!-- Lista de produtos aqui -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Loja Linda Flor</p>
-    </footer>
-    <script src="scripts.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Linda Flor</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <img src="nnn" alt="Logo Linda Flor" class="logo">
-        <h1>Loja Linda Flor</h1>
-        <p>Descubra nossas joias exclusivas, inspiradas na natureza.</p>
-    </header>
-    <main>
-        <section id="produtos">
-            <h2>Nossos Produtos</h2>
-            <! <img src= 
             <div class="produto">
-                <img src="imagem/Fleur de Lis.jpeg" alt="Produto 1">
+                <img src="imagem/Fleur_de_Lis.jpeg" alt="Produto 1">
                 <p>Anel Flor de Lis</p>
             </div>
             <div class="produto">
-                <img src="imagem/Colar Sol - Ouro.jpeg" alt="Produto 2">
+                <img src="imagem/Colar_Sol_Ouro.jpeg" alt="Produto 2">
                 <p>Colar Brilho do Sol</p>
             </div>
         </section>
@@ -58,8 +48,11 @@
     <footer>
         <p>&copy; 2024 Loja Linda Flor</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html 
