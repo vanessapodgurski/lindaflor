@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Linda Flor</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body { 
             font-family: 'Arial', sans-serif; 
@@ -16,28 +15,54 @@
         header { 
             background-color: #e1d1c1; 
             color: #333; 
-            padding: 20px; 
+            padding: 10px 20px; 
             display: flex; 
             align-items: center; 
             justify-content: space-between; 
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
         }
-        .logo { 
-            width: 120px; 
+        .header-content { 
+            flex: 1; 
+        }
+        .header-content h1 { 
+            margin: 0; 
+            font-size: 2em; 
+            color: #333; 
+            text-align: left; 
+        }
+        .menu-btn, .search-bar input, .profile, .cart { 
+            margin-left: 10px; 
         }
         .menu-btn { 
             font-size: 24px; 
             cursor: pointer; 
-            padding: 10px 15px; 
+            padding: 10px; 
             background-color: #d5bda7; 
             color: #fff; 
             border: none; 
             border-radius: 5px; 
         }
+        .search-bar { 
+            display: flex; 
+            align-items: center; 
+            flex: 2; 
+        }
+        .search-bar input { 
+            width: 100%; 
+            padding: 5px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+        }
+        .profile, .cart { 
+            font-size: 24px; 
+            cursor: pointer; 
+            color: #333; 
+            margin-left: 10px; 
+        }
         .menu { 
             display: none; 
             position: absolute; 
-            top: 70px; 
+            top: 60px; 
             left: 0; 
             width: 100%; 
             background-color: #d5bda7; 
@@ -55,27 +80,49 @@
         .menu a:hover { 
             background-color: #b49a8e; 
         }
-        .header-content { 
-            text-align: center; 
-        }
-        .header-content h1 { 
-            margin: 0; 
-            font-size: 2.5em; 
-            color: #333; 
-        }
-        .header-content p { 
-            margin: 5px 0 0; 
-            font-size: 1.2em; 
-        }
-        main { 
+        .promo-banner { 
+            background: url('imagem/fundo-areia.jpeg') no-repeat center center; 
+            background-size: cover; 
+            color: #a58a6a; 
             padding: 20px; 
+            border-radius: 10px; 
+            text-align: center; 
+            margin: 20px 0; 
+        }
+        .promo-banner h2 { 
+            font-family: 'The Seasons', sans-serif; 
+            font-size: 2em; 
+            margin: 0; 
+        }
+        .promo-banner h3 { 
+            font-family: 'The Seasons', sans-serif; 
+            font-size: 1.5em; 
+            margin: 10px 0; 
+        }
+        .promo-banner p { 
+            font-family: 'Cardo', serif; 
+            color: #3b3b3b; 
+            font-size: 1em; 
+        }
+        .categories { 
+            display: flex; 
+            justify-content: space-between; 
+            margin: 20px 0; 
+        }
+        .categories div { 
+            background-color: #e1d1c1; 
+            padding: 10px; 
+            border-radius: 5px; 
+            text-align: center; 
+            flex: 1; 
+            margin: 0 5px; 
         }
         .produto { 
             display: inline-block; 
             margin: 20px; 
             vertical-align: top; 
             text-align: center; 
-            width: calc(25% - 40px); /* Adjust width for 4 items per row */
+            width: calc(25% - 40px); 
             box-sizing: border-box; 
         }
         .produto img { 
@@ -88,7 +135,7 @@
             font-weight: bold; 
             color: #555; 
         }
-        footer { 
+        .footer { 
             background-color: #d5bda7; 
             color: white; 
             text-align: center; 
@@ -99,41 +146,59 @@
 </head>
 <body>
     <header>
-        <div class="menu-btn" onclick="toggleMenu()">☰ Menu</div>
-        <div id="menu" class="menu">
-            <a href="#home">Início</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-        </div>
-        <img src="imagem/png-clipart-japan-computer-icons-flower-waterflower-logo-flower-removebg-preview.png" alt="Logo Linda Flor" class="logo">
         <div class="header-content">
             <h1>Loja Linda Flor</h1>
-            <p>Descubra nossas joias exclusivas, inspiradas na natureza.</p>
         </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar produtos...">
+        </div>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <div class="profile">👤</div>
+        <div class="cart">🛒</div>
     </header>
+    <div class="menu" id="menu">
+        <a href="#home">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </div>
+    <section class="promo-banner">
+        <h2>Cadastre-se e ganhe 10% OFF</h2>
+        <h3>Acessórios Country TAN New York</h3>
+        <p>Acreditamos no poder das mulheres e nos esforçamos para criar um ambiente exclusivo e capacitador para todas.</p>
+    </section>
+    <section class="categories">
+        <div>Para Você</div>
+        <div>Popular</div>
+        <div>Conjuntos</div>
+        <div>Colares</div>
+        <div>Brincos</div>
+        <div>Lenços</div>
+        <div>Mais</div>
+        <div>Bolsas</div>
+    </section>
     <main>
         <section id="produtos">
             <h2>Nossos Produtos</h2>
             <div class="produto">
-                <img src="imagem/Essecial ✨.jpeg" alt="Produto 1">
-                <p>Anel Flor de Lis</p>
+                <img src="imagem/produto1.jpeg" alt="Produto 1">
+                <p>Estrela do Rodeio<br>$180</p>
             </div>
             <div class="produto">
-                <img src="imagem/Colar Sol - Ouro.jpeg" alt="Produto 2">
-                <p>Colar Brilho do Sol</p>
+                <img src="imagem/produto2.jpeg" alt="Produto 2">
+                <p>Laçada Perfeita<br>$230</p>
             </div>
             <div class="produto">
-                <img src="imagem/Brincos-Estrela.jpeg" alt="Produto 3">
-                <p>Brincos Estrela</p>
+                <img src="imagem/produto3.jpeg" alt="Produto 3">
+                <p>Roça Rosa<br>$60</p>
             </div>
             <div class="produto">
-                <img src="imagem/Bracelete-Coração.jpeg" alt="Produto 4">
-                <p>Bracelete Coração</p>
+                <img src="imagem/produto4.jpeg" alt="Produto 4">
+                <p>Chamego Meu<br>$80</p>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Loja Linda Flor</p>
     </footer>
     <script>
