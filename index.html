@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Linda Flor</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=The+Seasons:wght@400;700&family=TAN+New+York:wght@400;700&family=Cardo:wght@400;700&display=swap');
-
         body { 
             font-family: 'Arial', sans-serif; 
             margin: 0; 
@@ -28,8 +26,7 @@
         }
         .header-content h1 { 
             margin: 0; 
-            font-family: 'The Seasons', sans-serif;
-            font-size: 2.5em; 
+            font-size: 2em; 
             color: #333; 
             text-align: left; 
         }
@@ -89,21 +86,8 @@
             color: #a58a6a; 
             padding: 30px; 
             border-radius: 10px; 
-            text-align: left; 
+            text-align: center; 
             margin: 20px 0; 
-            position: relative;
-        }
-        .promo-banner::before {
-            content: 'Cadastre-se';
-            position: absolute;
-            top: 10px;
-            left: -50px;
-            background-color: #8b5e3c; /* Marrom */
-            color: white;
-            border-radius: 50%;
-            padding: 10px;
-            font-weight: bold;
-            font-size: 1em;
         }
         .promo-banner h2 { 
             font-family: 'TAN New York', sans-serif; 
@@ -143,7 +127,7 @@
             position: relative;
             margin: 10px; 
             text-align: center; 
-            width: calc(25% - 20px); /* Ajustado para margens */
+            width: calc(25% - 20px); /* Adjusted for margins */
             box-sizing: border-box; 
         }
         .produto img { 
@@ -160,7 +144,6 @@
             border-radius: 50%;
             padding: 5px 10px;
             font-weight: bold;
-            font-size: 0.8em;
         }
         .produto p { 
             margin: 10px 0 0; 
@@ -195,8 +178,8 @@
         <a href="#contato">Contato</a>
     </div>
     <section class="promo-banner">
-        <h2>Acessórios Country</h2>
-        <h3>Cadastre-se e ganhe 10% OFF</h3>
+        <h2>Cadastre-se e ganhe 10% OFF</h2>
+        <h3>Acessórios Country</h3>
         <p>Acreditamos no poder das mulheres e nos esforçamos para criar um ambiente exclusivo e capacitador para todas.</p>
     </section>
     <section class="categories">
@@ -228,6 +211,25 @@
                     <img src="imagem/Rhinestone Fringe Bandana_ Bachelorette Party _ Bridesmaid - Etsy.jpeg" alt="Produto 3">
                     <p>Roça Rosa</p>
                 </div>
+                <div class="produto">
+                    <div class="price-tag">$80</div>
+                    <img src="imagem/Modern Bolo Concho Necklace, Cowhide Leather, Slotted Metal Concho, Western Statement Necklace, choose concho finish and leather color.jpeg" alt="Produto 4">
+                    <p>Chamego Meu</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Loja Linda Flor</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+
                
 
-                
