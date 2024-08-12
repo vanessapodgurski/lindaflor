@@ -6,17 +6,95 @@
     <title>Loja Linda Flor</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: 'Georgia', serif; margin: 0; padding: 0; text-align: center; background-color: #faf3e0; }
-        header { background-color: #fff; color: #333; padding: 10px; position: relative; display: flex; align-items: center; justify-content: center; }
-        .logo { width: 100px; margin-right: 15px; }
-        .menu-btn { font-size: 30px; cursor: pointer; padding: 10px; background-color: #b0a8a2; color: white; display: inline-block; border: none; }
-        .menu { display: none; position: absolute; top: 60px; left: 0; width: 100%; background-color: #b0a8a2; color: white; text-align: center; }
-        .menu a { color: white; text-decoration: none; display: block; padding: 10px; }
-        .menu a:hover { background-color: #8e8c8a; }
-        main { padding: 20px; }
-        .produto { display: inline-block; margin: 10px; vertical-align: top; }
-        .produto img { width: 150px; border-radius: 8px; }
-        footer { background-color: #b0a8a2; color: white; text-align: center; padding: 10px; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+            color: #333; 
+        }
+        header { 
+            background-color: #e1d1c1; 
+            color: #333; 
+            padding: 20px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        .logo { 
+            width: 120px; 
+        }
+        .menu-btn { 
+            font-size: 24px; 
+            cursor: pointer; 
+            padding: 10px 15px; 
+            background-color: #d5bda7; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+        }
+        .menu { 
+            display: none; 
+            position: absolute; 
+            top: 70px; 
+            left: 0; 
+            width: 100%; 
+            background-color: #d5bda7; 
+            color: #fff; 
+            text-align: center; 
+            z-index: 1000; 
+        }
+        .menu a { 
+            color: white; 
+            text-decoration: none; 
+            display: block; 
+            padding: 15px; 
+            border-bottom: 1px solid #b49a8e; 
+        }
+        .menu a:hover { 
+            background-color: #b49a8e; 
+        }
+        .header-content { 
+            text-align: center; 
+        }
+        .header-content h1 { 
+            margin: 0; 
+            font-size: 2.5em; 
+            color: #333; 
+        }
+        .header-content p { 
+            margin: 5px 0 0; 
+            font-size: 1.2em; 
+        }
+        main { 
+            padding: 20px; 
+        }
+        .produto { 
+            display: inline-block; 
+            margin: 20px; 
+            vertical-align: top; 
+            text-align: center; 
+            width: calc(25% - 40px); /* Adjust width for 4 items per row */
+            box-sizing: border-box; 
+        }
+        .produto img { 
+            width: 100%; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        .produto p { 
+            margin: 10px 0 0; 
+            font-weight: bold; 
+            color: #555; 
+        }
+        footer { 
+            background-color: #d5bda7; 
+            color: white; 
+            text-align: center; 
+            padding: 10px; 
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1); 
+        }
     </style>
 </head>
 <body>
@@ -29,7 +107,7 @@
             <a href="#contato">Contato</a>
         </div>
         <img src="imagem/png-clipart-japan-computer-icons-flower-waterflower-logo-flower-removebg-preview.png" alt="Logo Linda Flor" class="logo">
-        <div>
+        <div class="header-content">
             <h1>Loja Linda Flor</h1>
             <p>Descubra nossas joias exclusivas, inspiradas na natureza.</p>
         </div>
