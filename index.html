@@ -8,8 +8,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro')
 
         body { 
-            font-family: 'Arial', sans-serif; 
-            margin: 0; 
+            font-family: @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+                 margin: 0; 
             padding: 0; 
             background-color: #f4f4f4; 
             color: #333; 
@@ -106,17 +106,17 @@
             text-align: center;
         }
         .promo-banner h2 { 
-            font-family: 'TAN New York', sans-serif; 
+            font-family: @import url(https://fonts.google.com/share?selection.family=Tinos:ital,wght@0,400;0,700;1,400;1,700);, sans-serif; 
             font-size: 2.5em; 
             margin: 0; 
         }
         .promo-banner h3 { 
-            font-family: 'TAN New York', sans-serif; 
+            font-family: @import url(https://fonts.google.com/share?selection.family=Tinos:ital,wght@0,400;0,700;1,400;1,700);k', sans-serif; 
             font-size: 2em; 
             margin: 10px 0; 
         }
         .promo-banner p { 
-            font-family: 'Cardo', serif; 
+            font-family: @import url(https://fonts.google.com/share?selection.family=Cardo:ital,wght@0,400;0,700;1,400|Tinos:ital,wght@0,400;0,700;1,400;1,700);serif; 
             color: #3b3b3b; 
             font-size: 1.2em; 
         }
@@ -245,6 +245,5 @@
             const menu = document.getElementById('menu');
             menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         }
-    </script>
-</body>
+    </script></body>
 </html>
