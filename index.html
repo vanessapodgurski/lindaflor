@@ -84,30 +84,31 @@
             background: url('imagem/fundo-areia.jpeg') no-repeat center center; 
             background-size: cover; 
             color: #a58a6a; 
-            padding: 20px; 
+            padding: 30px; 
             border-radius: 10px; 
             text-align: center; 
             margin: 20px 0; 
         }
         .promo-banner h2 { 
-            font-family: 'The Seasons', sans-serif; 
-            font-size: 2em; 
+            font-family: 'TAN New York', sans-serif; 
+            font-size: 2.5em; 
             margin: 0; 
         }
         .promo-banner h3 { 
-            font-family: 'The Seasons', sans-serif; 
-            font-size: 1.5em; 
+            font-family: 'TAN New York', sans-serif; 
+            font-size: 2em; 
             margin: 10px 0; 
         }
         .promo-banner p { 
             font-family: 'Cardo', serif; 
             color: #3b3b3b; 
-            font-size: 1em; 
+            font-size: 1.2em; 
         }
         .categories { 
             display: flex; 
             justify-content: space-between; 
             margin: 20px 0; 
+            flex-wrap: wrap; 
         }
         .categories div { 
             background-color: #e1d1c1; 
@@ -117,18 +118,32 @@
             flex: 1; 
             margin: 0 5px; 
         }
+        .produto-container {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between;
+        }
         .produto { 
-            display: inline-block; 
-            margin: 20px; 
-            vertical-align: top; 
+            position: relative;
+            margin: 10px; 
             text-align: center; 
-            width: calc(25% - 40px); 
+            width: calc(25% - 20px); /* Adjusted for margins */
             box-sizing: border-box; 
         }
         .produto img { 
             width: 100%; 
             border-radius: 10px; 
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        .produto .price-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #8b5e3c; /* Marrom */
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-weight: bold;
         }
         .produto p { 
             margin: 10px 0 0; 
@@ -180,21 +195,27 @@
     <main>
         <section id="produtos">
             <h2>Nossos Produtos</h2>
-            <div class="produto">
-                <img src="imagem/3af7a20d-a63f-48c5-9158-92ce2ccde40f.jpeg" alt="Produto 1">
-                <p>Estrela do Rodeio<br>$180</p>
-            </div>
-            <div class="produto">
-                <img src="imagem/9ct Gold Horseshoe Pendant Necklace.jpeg" alt="Produto 2">
-                <p>Laçada Perfeita<br>$230</p>
-            </div>
-            <div class="produto">
-                <img src="imagem/Rhinestone Fringe Bandana_ Bachelorette Party _ Bridesmaid - Etsy.jpeg" alt="Produto 3">
-                <p>Roça Rosa<br>$60</p>
-            </div>
-            <div class="produto">
-                <img src="imagem/Modern Bolo Concho Necklace, Cowhide Leather, Slotted Metal Concho, Western Statement Necklace, choose concho finish and leather color.jpeg" alt="Produto 4">
-                <p>Chamego Meu<br>$80</p>
+            <div class="produto-container">
+                <div class="produto">
+                    <div class="price-tag">$180</div>
+                    <img src="imagem/3af7a20d-a63f-48c5-9158-92ce2ccde40f.jpeg" alt="Produto 1">
+                    <p>Estrela do Rodeio</p>
+                </div>
+                <div class="produto">
+                    <div class="price-tag">$230</div>
+                    <img src="imagem/9ct Gold Horseshoe Pendant Necklace.jpeg" alt="Produto 2">
+                    <p>Laçada Perfeita</p>
+                </div>
+                <div class="produto">
+                    <div class="price-tag">$60</div>
+                    <img src="imagem/Rhinestone Fringe Bandana_ Bachelorette Party _ Bridesmaid - Etsy.jpeg" alt="Produto 3">
+                    <p>Roça Rosa</p>
+                </div>
+                <div class="produto">
+                    <div class="price-tag">$80</div>
+                    <img src="imagem/Modern Bolo Concho Necklace, Cowhide Leather, Slotted Metal Concho, Western Statement Necklace, choose concho finish and leather color.jpeg" alt="Produto 4">
+                    <p>Chamego Meu</p>
+                </div>
             </div>
         </section>
     </main>
